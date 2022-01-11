@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="hello">Analyzed text : 👇👇 </h1><br>
+<h3>{analyzed_text:}</h3><br>
+<button onclick="getTextCopied()" id="buttontext">Copy</button> <br>'
+<a href="http://127.0.0.1:8000"> Back to home </a>
+<script>function getTextCopied() { var inputfield=document.getElementById('inputfield');
+inputfield.select();
+inputfield.setSelectionRange(0,9999);
+document.execCommand("copy");
+document.getElementById('buttontext').innerHTML="Copied"; }
+</body>
+</html>

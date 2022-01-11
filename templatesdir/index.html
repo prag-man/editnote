@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<!--hello there we are <br>-->
+<!--    <a href='http://127.0.0.1:8000/about'>about</a> <br>-->
+<!--    <a href='http://127.0.0.1:8000/capitalize'>capitalize</a><br>-->
+<!--    <a href='http://127.0.0.1:8000/capitalizefirst'>capitalize first</a><br>-->
+<!--    <a href='http://127.0.0.1:8000/smallcase'>smallcase</a><br>-->
+<!--    <a href='http://127.0.0.1:8000/removepunc'>remove punctuation</a><br>-->
+<!--    <a href='http://127.0.0.1:8000/spaceremove'>remove space</a><br>-->
+<!--    <a href='http://127.0.0.1:8000/charcount'>character counter</a><br>-->
+<h1>welcome to text Analyzer.</h1>
+<h3>Enter your text in the area below</h3>
+<form action="/analyzer" method="post"> {% csrf_token %}
+
+    <textarea name="text" style="margin: 0px; width: 580px; height: 66px;"></textarea> <br>
+    <input type="checkbox" name="capitalize"> Capitalize </input><br>
+    <input type="checkbox" name="uppercase"> Uppercase </input><br>
+    <input type="checkbox" name="lowercase"> Lowercase </input><br>
+    <input type="checkbox" name="removepunc"> Remove Punctution </input><br>
+    <input type="checkbox" name="removespace"> Remove Space </input><br>
+    <input type="checkbox" name="charcount"> character Count </input><br>
+    <input type="checkbox" name="lnerem"> line remover </input><br>
+<!--    <input type="checkbox" name="removexlines"> Extra Line Remover </input><br>-->
+
+    <button type="submit" >Analyze text</button>
+</form>
+</body>
+</html>
