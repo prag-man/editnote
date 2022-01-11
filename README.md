@@ -1,1 +1,2 @@
-# editnote
+# Editnote
+A simple text utils created with the help of django framework which gives you a set of functionalities...
