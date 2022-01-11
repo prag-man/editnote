@@ -3,7 +3,6 @@ import time
 
 from django.http import HttpResponse #if you want to return html code itself in the function
 from django.shortcuts import render #if you want to attach a html file => takes 2 params : 1) requests, 2)file name which is in the templates dir
-import pyttsx3
 import random
 
 def index(requests): #function which is being linked to urls.py and is acting as our home page
