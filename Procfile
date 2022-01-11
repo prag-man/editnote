@@ -1,1 +1,1 @@
-web: gunicorn editnote.wsgi 
+web: gunicorn mysite.wsgi 
