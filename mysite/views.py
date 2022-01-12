@@ -121,7 +121,7 @@ def analyzer(requests):
 
     return HttpResponse(f'<h1 id="hello">Analyzed text : 👇👇 </h1><br> <h3>{analyzed_text}</h3><br>'
                         f'<button onclick="getTextCopied()" id="buttontext">Copy</button> <br>'
-                        f'<a href="http://127.0.0.1:8000"> Back to home </a> <br> <h5>Made with ❤️ by Pragyam Soni</h5> ')
+                        f'<a href="https://editnote.herokuapp.com"> Back to home </a> <br> <h5>Made with ❤️ by Pragyam Soni</h5> ')
 
 def rando(requests):
     return HttpResponse('''<h1 align="centre">Welcome to Random.com</h1>
